@@ -1,0 +1,360 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improve color contrast for links and other text */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Ensure contrast ratio is good for links */
+a:hover {
+  color: #535bf2;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #242424;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 3.5em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.2em;
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+/* Buttons should have a large clickable area and visible focus state */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Focus visible for better keyboard navigation */
+button:focus,
+button:focus-visible {
+  outline: 4px solid #535bf2; /* Strong, visible outline */
+}
+
+button:hover {
+  background-color: #535bf277;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 0.8rem 2rem;
+}
+
+.navbar .nav-link {
+  color: #242424;
+  font-weight: 600;
+}
+
+/* Ensure proper contrast for navbar links */
+.navbar .nav-link:hover {
+  color: #646cff;
+}
+
+/* Center navbar items */
+.navbar-expand-lg .navbar-nav {
+  justify-content: center;
+  width: 100%;
+}
+
+/* Navbar toggle button for mobile view */
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+/* Footer improvements for visibility */
+footer {
+  padding: 1.5em 0;
+  text-align: center;
+  color: #d0d0d0;
+}
+
+/* Mobile responsiveness and font adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* index.css or App.css */
+
+/* Light Theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light .navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light .navbar  .nav-link {
+  color: #000000;
+}
+
+body.light .navbar .nav-link:hover {
+  color: #007bff;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+body.dark .navbar {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+body.dark .navbar-brand {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+body.dark p {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* Added Icon Toggler for Darkmode */
+body.dark .navbar-toggler-icon {
+  background-color: #242424;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+body.dark .navbar .nav-link {
+  color: #ffffff;
+}
+
+body.dark .navbar .nav-link:hover {
+  color: #61dafb;
+}
+
+.navbar .btn-secondary {
+  margin-left: 10px;
+}
+
+/* General Page Styling for Messages */
+.messages-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #333; /* Matches dark theme */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.messages-page h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 1em;
+}
+
+.messages-page h3 {
+  font-size: 1.6em;
+  color: #ffffff;
+  margin: 0.5em 0;
+}
+
+/* Message Items */
+.messages-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.messages-page li {
+  background-color: #444;
+  border-radius: 6px;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.messages-page li p {
+  color: #ccc;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.messages-page li strong {
+  color: #fff;
+}
+
+/* Error and Empty States */
+.messages-page p {
+  font-size: 1.2em;
+  color: #ff4d4d; /* For errors */
+  margin-top: 1em;
+}
+
+.messages-page .no-messages {
+  font-size: 1.2em;
+  color: #a3a3a3; /* Subtle gray for "No messages yet" */
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* Button Styling for the Messages Page */
+.messages-page button {
+  display: inline-block;
+  padding: 1em 2em;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2em;
+  width: 100%;
+  max-width: 200px; /* Limit button size */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Hover and Focus */
+.messages-page button:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure Accessibility: Focus Styles */
+.messages-page button:focus-visible {
+  outline: 4px solid #535bf2; /* More visible focus state for better accessibility */
+}
+
+/* Ensure messages page is responsive */
+@media (max-width: 768px) {
+  .messages-page {
+    padding: 1rem;
+  }
+
+  .messages-page h2 {
+    font-size: 2em;
+  }
+
+  .messages-page h3 {
+    font-size: 1.4em;
+  }
+
+  .messages-page li p {
+    font-size: 1.1em;
+  }
+
+  .messages-page button {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+}
+
+/* For Light Mode */
+@media (prefers-color-scheme: light) {
+  :root { 
+    color: #213547;
+    background-color: #ffffff;
+  }
+  
+  body {
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+  a {
+    color: #007bff;
+  }
+
+  a:hover {
+    color: #0056b3;
+  }
+
+  button {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+    color: #333;
+  }
+
+  button:hover {
+    background-color: #e9e9e9;
+    border-color: #bbb;
+  }
+
+  footer {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  footer a {
+    color: #007bff;
+  }
+
+  footer a:hover {
+    color: #0056b3;
+  }
+}
